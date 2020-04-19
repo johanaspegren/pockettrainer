@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">PocketTrainer</string>
+
+        <!-- TODO: Remove or change this placeholder text -->
+        <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string name="main_fragment">Main fragment</string>
+        <string name="session_fragment">Session fragment</string>
+
+        <string name="text_lopning">Löpning</string>
+        <string name="text_hopp">Hopp</string>
+        <string name="text_kast">Kast</string>
+        <string name="text_grund">Grund</string>
+
+        <string name="switch_sprint">Sprint</string>
+        <string name="switch_hack">Häck</string>
+        <string name="switch_stafett">Stafett</string>
+        <string name="switch_medeldistans">M.dist</string>
+        <string name="switch_langdistans">L.dist</string>
+
+        <string name="switch_langd">Längd</string>
+        <string name="switch_hojd">Höjd</string>
+        <string name="switch_tresteg">Tresteg</string>
+        <string name="switch_stav">Stav</string>
+
+        <string name="switch_kula">Kula</string>
+        <string name="switch_diskuss">Diskuss</string>
+        <string name="switch_spjut">Spjut</string>
+        <string name="switch_slagga">Slägga</string>
+
+        <string name="switch_kondition">Kondition</string>
+        <string name="switch_styrka">Styrka</string>
+        <string name="switch_koordination">Koordination</string>
+        <string name="switch_snabbhet">Snabbhet</string>
+
+        <string name="button_save">Spara</string>
+        <string name="button_share">Dela</string>
+
+
+</resources>

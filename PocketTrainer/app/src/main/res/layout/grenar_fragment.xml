@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GrenarFragment">
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView_lopning"
+        android:layout_width="75dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:hint="@string/text_lopning"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_hopp"
+        android:layout_width="75dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/text_hopp"
+        app:layout_constraintStart_toEndOf="@+id/textView_lopning"
+        app:layout_constraintTop_toTopOf="@+id/textView_lopning" />
+
+    <TextView
+        android:id="@+id/textView_kast"
+        android:layout_width="75dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/text_kast"
+        app:layout_constraintStart_toEndOf="@+id/textView_hopp"
+        app:layout_constraintTop_toTopOf="@+id/textView_lopning" />
+
+    <TextView
+        android:id="@+id/textView_grund"
+        android:layout_width="75dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/text_grund"
+        app:layout_constraintStart_toEndOf="@+id/textView_kast"
+        app:layout_constraintTop_toTopOf="@+id/textView_lopning" />
+
+    <Switch
+        android:id="@+id/switch_sprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_sprint"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_lopning"
+        app:layout_constraintTop_toBottomOf="@+id/textView_lopning" />
+
+    <Switch
+        android:id="@+id/switch_hack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_hack"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_lopning"
+        app:layout_constraintTop_toBottomOf="@+id/switch_sprint" />
+
+    <Switch
+        android:id="@+id/switch_koordination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_koordination"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_grund"
+        app:layout_constraintTop_toBottomOf="@+id/switch_styrka" />
+
+    <Switch
+        android:id="@+id/switch_snabbhet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_snabbhet"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_grund"
+        app:layout_constraintTop_toBottomOf="@+id/switch_koordination" />
+
+
+
+    <Switch
+        android:id="@+id/switch_styrka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_styrka"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_grund"
+        app:layout_constraintTop_toBottomOf="@+id/switch_kondition" />
+
+    <Switch
+        android:id="@+id/switch_kondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_kondition"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_grund"
+        app:layout_constraintTop_toBottomOf="@+id/textView_grund" />
+
+    <Switch
+        android:id="@+id/switch_slagga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_slagga"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_kast"
+        app:layout_constraintTop_toBottomOf="@+id/switch_spjut" />
+
+
+    <Switch
+        android:id="@+id/switch_spjut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_spjut"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_kast"
+        app:layout_constraintTop_toBottomOf="@+id/switch_diskuss" />
+
+    <Switch
+        android:id="@+id/switch_diskuss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_diskuss"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_kast"
+        app:layout_constraintTop_toBottomOf="@+id/switch_kula" />
+
+    <Switch
+        android:id="@+id/switch_kula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_kula"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_kast"
+        app:layout_constraintTop_toBottomOf="@+id/textView_kast" />
+
+
+    <Switch
+        android:id="@+id/switch_stav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_stav"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_hopp"
+        app:layout_constraintTop_toBottomOf="@+id/switch_tresteg" />
+
+    <Switch
+        android:id="@+id/switch_tresteg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_tresteg"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_hopp"
+        app:layout_constraintTop_toBottomOf="@+id/switch_hojd" />
+
+    <Switch
+        android:id="@+id/switch_hojd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_hojd"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_hopp"
+        app:layout_constraintTop_toBottomOf="@+id/switch_langd" />
+
+    <Switch
+        android:id="@+id/switch_langd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_langd"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_hopp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_hopp" />
+
+
+    <Switch
+        android:id="@+id/switch_langdistans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_langdistans"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_lopning"
+        app:layout_constraintTop_toBottomOf="@+id/switch_medeldistans" />
+
+    <Switch
+        android:id="@+id/switch_medeldistans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_medeldistans"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_lopning"
+        app:layout_constraintTop_toBottomOf="@+id/switch_stafett" />
+
+
+    <Switch
+        android:id="@+id/switch_stafett"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/switch_stafett"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintStart_toStartOf="@+id/textView_lopning"
+        app:layout_constraintTop_toBottomOf="@+id/switch_hack" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/recycler_view_main"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_main"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recycler_view"
+        app:layout_constraintTop_toTopOf="@+id/recycler_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
